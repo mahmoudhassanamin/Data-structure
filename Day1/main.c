@@ -16,6 +16,7 @@ int main()
     InsertAfter(1,3);
     InsertAfter(50,7);
     Display();
+    printf("the number of nodes = %d", GetCount());
 
 
 

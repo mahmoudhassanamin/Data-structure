@@ -130,7 +130,16 @@ void InsertAfter(int data, int afterData){
 }
 
 int GetCount(){
+    int counter=0;
+    Node *current = head;
 
+    while(current != NULL)
+    {
+        counter++;
+        current = current->Next;
+    }
+
+    return counter;
 }
 
 int GetDataByIndex(int index){
