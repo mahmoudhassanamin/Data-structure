@@ -46,7 +46,7 @@ void Display()
 
     while(current != NULL)
     {
-        printf("%d   ", current->Data);
+        printf("%d \n", current->Data);
         current = current->Next;
     }
 }
@@ -105,10 +105,36 @@ void Remove(int data)
     free(node);
 }
 
-void InsertAfter(int data, int afterData);
+void InsertAfter(int data, int afterData){
 
-int GetCount();
+    Node * node = GetNodeByData(afterData);
+    if ( node != NULL){
+        Node * newnode = malloc(sizeof(Node));
+        newnode->Data= data;
+        newnode->Prev= node;
+        newnode->Next= node->Next;
+        node->Next=newnode;
+        if(node == tail){
+            tail = newnode;
 
-int GetDataByIndex(int index);
+        }
+        else{
+            node->Next->Prev=newnode;
+        }
+    }
+    else{
+        printf("\n enter a valid value of node ");
+    }
+
+
+}
+
+int GetCount(){
+
+}
+
+int GetDataByIndex(int index){
+
+}
 
 #endif // LINKEDLIST_H

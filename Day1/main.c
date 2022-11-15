@@ -12,8 +12,12 @@ int main()
     Add(5);
     Add(7);
     Add(9);
-
+    InsertAfter(100,9);
+    InsertAfter(1,3);
+    InsertAfter(50,7);
     Display();
+
+
 
     return 0;
 }
