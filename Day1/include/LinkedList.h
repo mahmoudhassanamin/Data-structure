@@ -143,6 +143,21 @@ int GetCount(){
 }
 
 int GetDataByIndex(int index){
+    int flag =0;
+    if (index<GetCount()){
+        Node * on =head;
+        while(flag < index){
+            on=head->Next;
+            flag++;
+        }
+        return on->Data;
+    }
+    else {
+        printf("enter a Valid index in next time");
+        printf("\nenter index of node ");
+        scanf("%d",&index);
+        return GetDataByIndex(index);
+    }
 
 }
 

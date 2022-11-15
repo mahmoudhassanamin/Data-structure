@@ -5,6 +5,7 @@
 
 int main()
 {
+    int index =0 ;
     /*LinkedList myList = {.head = NULL, .tail = NULL};
     Add(&myList, 3);*/
 
@@ -17,8 +18,9 @@ int main()
     InsertAfter(50,7);
     Display();
     printf("the number of nodes = %d", GetCount());
-
-
+    printf("\nenter index of node ");
+    scanf("%d",&index);
+    printf("\ndata in index = %d", GetDataByIndex(index));
 
     return 0;
 }
