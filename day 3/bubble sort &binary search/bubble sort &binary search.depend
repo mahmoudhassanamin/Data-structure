@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1669392731 source:e:\iti matrial\data structure\data-structure\day 3\bubble sort &binary search\main.c
+	<stdio.h>
+	<stdlib.h>
+	"b_Bs.h"
+
+1669392575 e:\iti matrial\data structure\data-structure\day 3\bubble sort &binary search\b_bs.h
+
+1669392559 source:e:\iti matrial\data structure\data-structure\day 3\bubble sort &binary search\b_bs.c
+	<stdio.h>
+	<stdlib.h>
+	"b_Bs.h"
+
