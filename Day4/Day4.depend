@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1671905493 source:e:\iti matrial\data structure\data-structure\day4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Tree.h"
+
+1671906180 e:\iti matrial\data structure\data-structure\day4\include\tree.h
+
